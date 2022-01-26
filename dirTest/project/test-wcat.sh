@@ -7,4 +7,3 @@ fi
 
 ../../tester/run-tests.sh -v $*
 
-

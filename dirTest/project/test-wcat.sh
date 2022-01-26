@@ -1,7 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+#! /bin/bash
 
+if ! [[ -x wcat ]]; then
+    echo "wcat executable does not exist"
+    exit 1
+fi
 
-int main(int argc, char *argv[]){
-    exit(EXIT_SUCCESS);
-}
+../../tester/run-tests.sh -v $*
+
